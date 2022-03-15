@@ -4,19 +4,18 @@ import Link from "next/link"
 import { Provider } from "react-redux"
 import rootReducer from "../redux/reducers"
 import { createStore } from "redux"
+import AuthProvider from '../component/AuthProvider'
 
 const store = createStore(rootReducer)
 
 function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>
+    <AuthProvider>
     <ChakraProvider>
-      <div>
-        <h1>test</h1>
-        <Link href="/products">products</Link>
-      </div>
       <Component {...pageProps} />
     </ChakraProvider>
+    </AuthProvider>
     </Provider>
   ) 
   
