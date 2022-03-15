@@ -1,5 +1,5 @@
 import { Box, Center, Text } from "@chakra-ui/react";
-import ContentCard from "../../components/ContentCard";
+import ContentCard from "../../component/ContentCard";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";

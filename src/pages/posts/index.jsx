@@ -1,6 +1,6 @@
 import { Box, Center } from "@chakra-ui/react";
-import ContentCard from "../../components/ContentCard";
-import ProtectedPage from "../../components/ProtectedPage";
+import ContentCard from "../../component/ContentCard";
+import ProtectedPage from "../../component/ProtectedPage";
 
 const postData = {
   userId: 1,
